@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #0d1117;
+    color: #e6eef8;
+        font-family: "Lobster", sans-serif; 
+
+}
+.bg-balls {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* نقطه‌های خیلی کوچک و کم‌رنگ */
+.bg-balls .ball {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color);
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(2px);
+  animation: float var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-80px); }
+}
+#container-header {
+    background-color:#ffffff04;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    
+}
+
+#container-header ul {
+    display: flex;
+    gap: 20px;
+    
+    
+}
+#container-header a{ 
+    font-weight: bolder;
+    background-color: #ffffff1e;
+        border: 2px solid #0000005b;
+border-radius: 90px 90px 90px 90px;
+-webkit-border-radius: 90px 90px 90px 90px;
+-moz-border-radius: 90px 90px 90px 90px;
+    padding: 10px 15px 10px 15px;
+    font-family: "Lobster", sans-serif; 
+color: #e6eef8;
+font-size: 15px;
+text-decoration: none;
+
+}
+ #container-header a:hover{
+     background-color: #ffffff7c;
+    border-color: #101010;
+    transform:rotate(2.5px);
+    transition: 0.25s ease; 
+    color: #000000;
+    padding: 8px 13px 8px 13px;
+ }
+.container {
+    width: 90%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    background: #161b22;
+    border: 1px solid #222831;
+    border-radius: 12px;
+    color: #e6eef8;
+}
+
+.search-box button {
+    padding: 14px 20px;
+    background: #21262d;
+    color: #e6eef8;
+    border: 1px solid #2b323a;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.search-box :hover{
+    background: #2b323a;
+    border-color: #3a3f47;
+    transform: translateY(-2px);
+}
+#reset :hover{
+    background: #2b323a;
+    border-color: #3a3f47;
+    transform: translateY(-2px);
+}
+.search-box:active {
+    transform: translateY(0);
+}
+.result {
+    background: #161b22;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ul{
+    list-style: none;
+     padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.bg-balls {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #002428, #002a69);
+    filter: blur(7px);
+    border-radius: 50%;
+    opacity: 0.35;
+    animation: float 12s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(50px, -40px) scale(1.2); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+#reset{
+    padding: 14px 20px;
+    background: #21262d;
+    border: 1px solid #2b323a;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#head{
+    background-color:#ffffff04;
+    width: 15%;
+    height:auto;
+    margin:0 auto;
+    margin-top: 50px;
+    border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+padding: 2px;
+}
+
+#head a{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #ffffff1e;
+        border: 2px solid #0000005b;
+border-radius: 90px 90px 90px 90px;
+-webkit-border-radius: 90px 90px 90px 90px;
+-moz-border-radius: 90px 90px 90px 90px;
+padding: 10px 15px 10px 15px;
+margin-top: 10px;
+    font-family: "Lobster", sans-serif; 
+color: #e6eef8;
+text-decoration: none;
+}
+#head p :hover{
+    background-color: #ffffff7c;
+    border-color: #101010;
+    transform:scale(2.5px);
+    transition: 0.25s ease; 
+    color: #000000;
+    padding: 13px 17px 13px 17px;
+
+}
+@media (max-width:480px){
+#head{
+    margin:0 auto;
+    width: 50%;
+    margin-top: 50px;
+}
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+.search-box input {
+    padding: 10px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+}
+}
+@media (max-width:768px){
+#head{
+    margin:0 auto;
+    width: 50%;
+    margin-top: 50px;
+}
+}
