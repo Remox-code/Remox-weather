@@ -247,7 +247,7 @@ h2{
     margin-top: 50px;
 }
 }
-@media (max-width:980px){
+@media (max-width:1200px){
 button {
   background: #3498db;
   border: 5px ridge rgba(255,255,255,0.39);
@@ -273,3 +273,4 @@ h2{
     width: 40%;
 }
 }
+
