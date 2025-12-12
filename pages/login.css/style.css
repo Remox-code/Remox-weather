@@ -1,17 +1,20 @@
-body {
+html, body {
     margin: 0;
-    height: 100vh;
-
-  background-image: url("../images2/background.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center center;
-
-        
-    color: #e6eef8;
-    font-family: "Lobster", sans-serif; 
-
+    padding: 0;
+    height: 100%;
 }
+
+body {
+    background-image: url("../images2/background.png");
+    background-size: cover;       /* مهم */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* اختیاری — ثابت نگه می‌داره */
+    
+    color: #e6eef8;
+    font-family: "Lobster", sans-serif;
+}
+
 #container-header {
     background-color:#ffffff04;
     display: flex;
@@ -193,3 +196,4 @@ h2{
   margin-top: 50px;
 }
 }
+
