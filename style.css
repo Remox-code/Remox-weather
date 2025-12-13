@@ -3,21 +3,21 @@ body {
     height: 100vh;
     background: #0d1117;
     color: #e6eef8;
-        font-family: "Lobster", sans-serif; 
-
 }
 #container-header {
     background-color:#ffffff04;
     display: flex;
     justify-content: center;
     padding: 15px 0;
-    
+    font-family: "Lobster", sans-serif; 
+
 }
 
 #container-header ul {
     display: flex;
     gap: 20px;
-    
+            font-family: "Lobster", sans-serif; 
+
     
 }
 #container-header a{ 
@@ -32,6 +32,7 @@ border-radius: 90px 90px 90px 90px;
 color: #e6eef8;
 font-size: 15px;
 text-decoration: none;
+        font-family: "Lobster", sans-serif; 
 
 }
  #container-header a:hover{
@@ -58,6 +59,8 @@ h1 {
     text-align: center;
     font-size: 26px;
     font-weight: 700;
+            font-family: "Lobster", sans-serif; 
+
 }
 
 .search-box {
@@ -81,6 +84,8 @@ h1 {
     border: 1px solid #2b323a;
     border-radius: 12px;
     cursor: pointer;
+            font-family: "Lobster", sans-serif; 
+
 }
 .search-box :hover{
     background: #2b323a;
@@ -142,6 +147,8 @@ ul{
     border: 1px solid #2b323a;
     border-radius: 12px;
     cursor: pointer;
+            font-family: "Lobster", sans-serif; 
+
 }
 #head{
     background-color:#ffffff04;
@@ -202,4 +209,5 @@ text-decoration: none;
     width: 50%;
     margin-top: 50px;
 }
+
 }
